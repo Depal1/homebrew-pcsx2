@@ -9,7 +9,7 @@ cask "pcsx2-dev" do
   homepage "hhttps://pcsx2.net"
 
   livecheck do
-    regex(%r{PCSX2-/v?(\d+(?:\.\d+)$}/i)
+    regex(%r{PCSX2-/v?(\d+(?:\.\d+)\b)$}/i)
   end
 
   app "PCSX2.app"
