@@ -9,7 +9,7 @@ cask "pcsx2-dev" do
   homepage "hhttps://pcsx2.net"
 
   livecheck do
-    url "https://github.com/tellowkrinkle/pcsx2/releases"
+    url "https://github.com/tellowkrinkle/pcsx2/releases/"
     regex(/href=.*?PCSX2[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
