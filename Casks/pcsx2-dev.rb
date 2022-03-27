@@ -10,7 +10,7 @@ cask "pcsx2-dev" do
 
   livecheck do
     url "https://github.com/tellowkrinkle/pcsx2/releases"
-    regex(/href=.*?example[._-]v?(\d+(?:\.\d+)+-dev-[0-9]{8})\.t/i)
+    regex(/href=.*?PCSX2[._-]v?(\d+(?:\.\d+)+-dev-[0-9]{8})\.t/i)
   end
 
   app "PCSX2.app"
