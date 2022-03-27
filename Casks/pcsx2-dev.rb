@@ -9,6 +9,7 @@ cask "pcsx2-dev" do
   homepage "hhttps://pcsx2.net"
 
   livecheck do
+    url "https://github.com/tellowkrinkle/pcsx2/releases"
     regex(%r{PCSX2-/v?(\d+(?:\.\d+)+)-dev-[0-9]{8}$}i)
   end
 
