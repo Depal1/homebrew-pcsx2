@@ -11,7 +11,7 @@ cask "pcsx2-dev" do
   livecheck do
     url "https://github.com/tellowkrinkle/pcsx2/releases/"
     strategy :page_match
-    regex(%r{/href=.*?/PCSX2[._-]v?(\d+(?:\.\d+)+-dev-[0-9]{8}\b)}i)
+    regex(%r{PCSX2-/v?(\d+(?:\.\d+)+-dev-[0-9]{8}\b)$}i)
   end
 
   app "PCSX2.app"
