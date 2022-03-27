@@ -2,7 +2,7 @@ cask "pcsx2-dev" do
   version "1.7.0-dev-20220325"
   sha256 "6c5450718f88c6ff13613385fcac91e1c907aad707c3777463e74a2138eaf66e"
 
-  url "https://github.com/tellowkrinkle/pcsx2/releases/download/macos-20220325/PCSX2-#{version}-Mac-64Bit.tar.gz",
+  url "https://github.com/tellowkrinkle/pcsx2/releases/download/macos-#{version[/[0-9]{8}/]}/PCSX2-#{version}-Mac-64Bit.tar.gz",
       verified: "https://github.com/tellowkrinkle/pcsx2/releases"
   name "PCSX2"
   desc "Playstation 2 Emulator"
