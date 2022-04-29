@@ -13,9 +13,9 @@ cask "pcsx2-nightly" do
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
-  app "PCSX2-sha[#{[0-9a-f]{5,40}\b}].app", target: "PCSX2.app"
+  app "PCSX2-sha[#{[0-9a-f]}].app", target: "PCSX2.app"
 
-  zap trash: [
+  zap rmdir: [
     "~/Library/Application Support/PCSX2",
     "~/Library/Preferences/net.pcsx2.pcsx2.plist",
     "~/Library/Saved Application State/net.pcsx2.pcsx2.savedState",
