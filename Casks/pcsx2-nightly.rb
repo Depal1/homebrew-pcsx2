@@ -17,7 +17,7 @@ cask "pcsx2-nightly" do
 
   zap rmdir: [
     "~/Library/Application Support/PCSX2",
+    "~/Library/Preferences/net.pcsx2.pcsx2.plist",
     "~/Library/Saved Application State/net.pcsx2.pcsx2.savedState",
-    "~/Library/Application Support/PCSX2",
   ]
 end
