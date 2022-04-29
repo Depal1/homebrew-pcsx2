@@ -6,14 +6,14 @@ cask "pcsx2-nightly" do
       verified: "https://github.com/PCSX2/pcsx2/releases"
   name "PCSX2"
   desc "Playstation 2 Emulator"
-  homepage "https://pcsx2.net"
+  homepage "https://pcsx2.net/"
 
   livecheck do
     url :url
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
-  app "PCSX2-sha[#{%r{[0-9a-f]}}].app", target: "PCSX2.app"
+  app "PCSX2-sha[#{//%r{[0-9a-f]{5,40}\b}//}].app", target: "PCSX2.app"
 
   zap rmdir: [
     "~/Library/Application Support/PCSX2",
