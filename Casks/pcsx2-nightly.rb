@@ -6,7 +6,7 @@ cask "pcsx2-nightly" do
       verified: "https://github.com/PCSX2/pcsx2/releases"
   name "PCSX2"
   desc "Playstation 2 Emulator"
-  homepage "hhttps://pcsx2.net"
+  homepage "https://pcsx2.net"
 
   livecheck do
     url :url
@@ -15,12 +15,9 @@ cask "pcsx2-nightly" do
 
   app "PCSX2.app"
 
-  zap trash: [
+  zap rmdir: [
     "~/Library/Application Support/PCSX2",
     "~/Library/Saved Application State/net.pcsx2.pcsx2.savedState",
-  ]
-
-  zap rmdir: [
     "~/Library/Application Support/PCSX2",
   ]
 end
