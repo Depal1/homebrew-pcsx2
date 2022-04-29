@@ -15,7 +15,7 @@ cask "pcsx2-nightly" do
 
   app "PCSX2-sha[#{[0-9a-f]{5,40}}].app", target: "PCSX2.app"
 
-  zap rmdir: [
+  zap trash: [
     "~/Library/Application Support/PCSX2",
     "~/Library/Preferences/net.pcsx2.pcsx2.plist",
     "~/Library/Saved Application State/net.pcsx2.pcsx2.savedState",
